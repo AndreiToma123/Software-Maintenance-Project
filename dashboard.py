@@ -58,14 +58,14 @@ class IMS:
         self.label_clock.place(x = 0, y = 70, relwidth = 1, height = 30)
 
         # ---------------- left menu ---------------
-        self.MenuLogo = Image.open(os.path.join(IMAGE_DIR, "menu_im.png"))
-        self.MenuLogo = self.MenuLogo.resize((200, 200))
-        self.MenuLogo = ImageTk.PhotoImage(self.MenuLogo)
+        self.menu_logo = Image.open(os.path.join(IMAGE_DIR, "menu_im.png"))
+        self.menu_logo = self.menu_logo.resize((200, 200))
+        self.menu_logo = ImageTk.PhotoImage(self.menu_logo)
 
         menu_left = Frame(self.root, bd = 2, relief = RIDGE, bg="white")
         menu_left.place(x = 0, y = 102, width = 200, height = 565)
 
-        label_menu_logo = Label(menu_left, image = self.MenuLogo)
+        label_menu_logo = Label(menu_left, image = self.menu_logo)
         label_menu_logo.pack(side = TOP, fill = X)
 
         label_menu = Label(
