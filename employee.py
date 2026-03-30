@@ -279,5 +279,5 @@ class employeeClass:
 
 if __name__=="__main__":
     root = Tk()
-    employee_object = employeeClass(root)
+    object_employee = employeeClass(root)
     root.mainloop()
